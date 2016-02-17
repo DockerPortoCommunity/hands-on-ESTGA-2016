@@ -229,8 +229,8 @@ The following table has the main `Dockerfile` instructions. A valid `Dockerfile`
 The following example provides an `ubuntu:14.04` image that will create an admin user, add it to the `sudo` group and set it as the default user. It also adds the `src/binary` file to the root filesystem and sets it as the image initial execution command.
 
 ```docker
-MAINTAINER Tiago Pires <tiago-a-pires@telecom.pt>
 FROM ubuntu:14.04
+MAINTAINER Tiago Pires <tiago-a-pires@telecom.pt>
 
 RUN adduser --system --shell /bin/bash --group --disabled-password admin && \
     adduser admin sudo
